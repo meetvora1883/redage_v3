@@ -9,20 +9,20 @@ moment.tz.setDefault('Asia/Kolkata');
 
 
 export let TimeFormat = (time = undefined, format = undefined) => {    
-    return moment(time).tz("Europe/Moscow").format(format);
+    return moment(time).tz("Asia/Kolkata").format(format);
 }
 
 export let TimeFormatStartOf = (time = undefined, unitOfTime = undefined) => {
-	return moment(time).tz("Europe/Moscow").startOf(unitOfTime).fromNow();
+	return moment(time).tz("Asia/Kolkata").startOf(unitOfTime).fromNow();
 }
 
 export let TimeFormatEndOf = (time = undefined, unitOfTime = undefined, format = 'YYYY-MM-DD HH:mm:ss') => {
-	return moment(time).tz("Europe/Moscow").endOf(unitOfTime).format(format);
+	return moment(time).tz("Asia/Kolkata").endOf(unitOfTime).format(format);
 }
 
 export const TimeFormatStartOfReadable = (time = undefined, unitOfTime = undefined) => readable(null, function start(set) {
 	const interval = setInterval(() => {
-		set(moment(time).tz("Europe/Moscow").startOf(unitOfTime).fromNow());
+		set(moment(time).tz("Asia/Kolkata").startOf(unitOfTime).fromNow());
 	}, 1000);
 
 	return function stop() {
