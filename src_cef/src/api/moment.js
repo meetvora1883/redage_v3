@@ -1,6 +1,7 @@
 import moment from 'moment-timezone';
 import { readable, derived } from 'svelte/store';
-
+// after importing moment-timezone
+moment.tz.setDefault('Asia/Kolkata');
 /*export default (time, format) => {
     if (!time) return moment().tz("Europe/Moscow").format(format);
     else return moment(time).tz("Europe/Moscow").format(format);
