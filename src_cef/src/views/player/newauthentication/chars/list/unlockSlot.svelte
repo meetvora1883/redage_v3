@@ -13,8 +13,8 @@
 <div class="auth__characters_block" class:active={$selectIndex === charid} on:click={onSelectSlot}>
     <div class="auth__characters_character">
         <div class="box-column">
-            <b>{translateText('player2', 'Слот')}</b>
-            <div>{translateText('player2', 'заблокирован')}</div>
+            <b>{translateText('player2', 'Slot')}</b>
+            <div>{translateText('player2', 'Locked')}</div>
         </div>
         <div class="auth__characters_circle red">
             <div class="auth__characters_circle_text">
@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="auth__characters_hover">
-        <div>{translateText('player2', 'Разблокировать')}</div>
+        <div>{translateText('player2', 'Unlock')}</div>
         <div class="main__button_square large box-center">
             <span class="auth-arrow"/>
         </div>
