@@ -47,7 +47,7 @@
 <div class="popup__newhud_boxinput">
     <div class="popup__newhud_esc">
         <div class="popup__newhud_escbutton box-center">ESC</div>
-        <div>{translateText('player2', 'Закрыть')}</div>
+        <div>{translateText('player2', 'Close')}</div>
     </div>
     <div class="popup__newhud_box">
         <div class="popup__newhud_title">
@@ -61,7 +61,7 @@
             {/each}
         </div>
         <div class="popup__newhud__buttons">
-            <div class="popup__newhud_button" in:fly={{ y: 50, duration: 350 }} on:click={() => onSelected("null")}>Отмена</div>
+            <div class="popup__newhud_button" in:fly={{ y: 50, duration: 350 }} on:click={() => onSelected("null")}>Cancel</div>
         </div>
     </div>
 </div>
