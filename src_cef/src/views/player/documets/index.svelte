@@ -10,7 +10,7 @@
 /*     let viewData = {
             page: "lsnews",
             data: {
-                gender: "Мужской",
+                gender: "Male",
                 name: "Vitaliy",
                 surname: "Zdobich",
                 dateReg: "12.05.19",
@@ -84,7 +84,7 @@
     <div class="box-column">
         <div class="newproject__buttonblock" on:click={()=> HideDocs()}>
             <div class="newproject__button">ESC</div>
-            <div>{translateText('player', 'Закрыть')}</div>
+            <div>{translateText('player', 'Close')}</div>
         </div>
         <svelte:component this={Views[viewData.page]} {...viewData.data} />
     </div>
