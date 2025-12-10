@@ -48,14 +48,14 @@
                 if (restoreInput.length != 0) {
 					executeClient ('restorepass', 0, restoreInput);
 					restorelength = 0;
-					placeholder = "Отправка сообщения...";
+					placeholder = "Sending message...";
 					restoreInput = "";
                 }
             } else {
                 if (restoreInput.length == 6) {
                     executeClient ('restorepass', 1, restoreInput);
 					restorelength = 0;
-					placeholder = "Происходит авторизация";
+					placeholder = "Authorization is in progress";
 					restoreInput = "";
                 } else restoreInput = "";
             }
@@ -71,7 +71,7 @@
             <InputCustom setValue={(value) => restoreInput = value} value={restoreInput} placeholder={placeholder} type="text" icon="auth-user"/>
             <div class="box-flex">
                 <div class="main__button main_button_size_large" style="width:100%;" on:click={onSubmitRestore}>
-                    <div class="main__button_left box-center">Восстановить</div>
+                    <div class="main__button_left box-center">Restore</div>
                     <div class="main__button_right box-center">
                         <div class="main__button_square box-center">
                             <span class="auth-arrow"/>
