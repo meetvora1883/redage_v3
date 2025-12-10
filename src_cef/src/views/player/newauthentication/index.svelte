@@ -44,7 +44,7 @@
 
 {#if queueText}
     <div class="newauthentication__popup">
-        <div class="newauthentication__popup_title">{translateText('player2', 'Вы находитесь в очереди')}</div>
+        <div class="newauthentication__popup_title">{translateText('player2', 'You are in a queue')}</div>
         <div class="newauthentication__popup_subtitle">{queueText}</div>
         <div class="auth-login-error newauthentication__popup_iconmail"></div>
     </div>
