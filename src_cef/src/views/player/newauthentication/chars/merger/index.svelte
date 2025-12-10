@@ -6,11 +6,9 @@
     export let isMerger;
     export let SetMerger;
 
-
     let password = "";
 
     let progressValue = 0;
-
 
     let serverId = 2;
 
@@ -26,13 +24,13 @@
     const SetProgressBar = (value) => {
         if (value == -1) {
             SetMerger (true);
-            window.notificationAdd(4, 9, translateText('player2', 'Данные введены неверно'), 3000);
+            window.notificationAdd(4, 9, translateText('player2', 'The entered data is incorrect'), 3000);
         } else if (value == -2) {
             SetMerger (true);
-            window.notificationAdd(4, 9, translateText('player2', 'Слишком быстро'), 3000);
+            window.notificationAdd(4, 9, translateText('player2', 'Too fast'), 3000);
         } else if (value == -3) {
             SetMerger (true);
-            window.notificationAdd(4, 9, translateText('player2', 'Свободных слотов для переноса нет!'), 3000);
+            window.notificationAdd(4, 9, translateText('player2', 'No free slots available for transfer!'), 3000);
         } else {
             progressValue = value;
         }
@@ -74,7 +72,7 @@
 <svelte:window on:keyup={onKeyUp} />
 <div class="popups-auth">
     <div class="box-auth" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
-        <div class="title">{translateText('player2', 'Перенос персонажей с RedAge White и Red')}</div>
+        <div class="title">{translateText('player2', 'Character transfer from RedAge White and Red')}</div>
         {#if progressValue < 1}
         <div class="animated fadeIn" style="width: 100%;">
             <div class="box-flex">
@@ -88,11 +86,26 @@
                 </label>
             </div>
             <div class="label-input">
-                <input type="password" bind:value={password} class="entry-login" name="password" id="entry-login-id" placeholder={translateText('player2', 'Ваш пароль от выбранного сервера')} required on:focus={ onFuncFocus } on:blur={ onFuncBlur } />
+                <input
+                    type="password"
+                    bind:value={password}
+                    class="entry-login"
+                    name="password"
+                    id="entry-login-id"
+                    placeholder={translateText('player2', 'Your password for the selected server')}
+                    required
+                    on:focus={ onFuncFocus }
+                    on:blur={ onFuncBlur }
+                />
                 <div class="error"></div>
             </div>
             <div class="button">
-                <input type="submit" class="btn red w-100" value="Начать процесс переноса" on:click|preventDefault={onSubmitAuth}/>
+                <input
+                    type="submit"
+                    class="btn red w-100"
+                    value="Start transfer process"
+                    on:click|preventDefault={onSubmitAuth}
+                />
             </div>
         </div>
         {:else}
