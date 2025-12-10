@@ -26,7 +26,7 @@
 <div class="auth__center">
     <div class="auth__buttons" style="justify-content: center;" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
         <div class="main__button main_button_size_large" style="margin-right: 0" on:click={onBuy}>
-            <div class="main__button_left box-center">{translateText('player2', 'Разблокировать')}</div>
+            <div class="main__button_left box-center">{translateText('player2', 'Unblock')}</div>
             <div class="main__button_right box-center">
                 <div class="main__button_square box-center">
                     <span class="auth-arrow"/>
