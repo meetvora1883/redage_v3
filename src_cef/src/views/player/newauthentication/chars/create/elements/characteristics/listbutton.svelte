@@ -29,6 +29,6 @@
 
 <div class="auth__box-arrows" on:click>
     <span class="auth-arrow-left auth__customization_icon" on:click={() => OnChangePreset(-1)} />
-    <div class="auth__customization_text">{preset === 3 ? "Кастомный" : characteristics[key][preset].name}</div>
+    <div class="auth__customization_text">{preset === 3 ? "Custom" : characteristics[key][preset].name}</div>
     <span class="auth-arrow-right auth__customization_icon" on:click={() => OnChangePreset(1)} />
 </div>
