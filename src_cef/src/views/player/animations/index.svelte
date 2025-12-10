@@ -16,42 +16,42 @@
     let animMenuList = [
         {
             id: 0,
-            title: translateText('player', 'Избранное'),
+            title: translateText('player', 'Favorites'),
             count: 0
         },
         {
             id: 1,
-            title: translateText('player', 'Сесть/Лечь'),
+            title: translateText('player', 'Sit/Lie down'),
             count: 0
         },
         {
             id: 2,
-            title: translateText('player', 'Социальные'),
+            title: translateText('player', 'Social'),
             count: 0
         },
         {
             id: 3,
-            title: translateText('player', 'Позы'),
+            title: translateText('player', 'Poses'),
             count: 0
         },
         {
             id: 4,
-            title: translateText('player', 'Неприличное'),
+            title: translateText('player', 'Indecent'),
             count: 0
         },
         {
             id: 5,
-            title: translateText('player', 'Физ. упражнения'),
+            title: translateText('player', 'Phys. exercises'),
             count: 0
         },
         {
             id: 6,
-            title: translateText('player', 'Танцы'),
+            title: translateText('player', 'Dancing'),
             count: 0
         },
         {
             id: 7,
-            title: translateText('player', 'Прочее'),
+            title: translateText('player', 'Other'),
             count: 0
         }
     ];
@@ -92,7 +92,7 @@
     const onPlayAnimation = (item) => {
         if (dubleClickData === item && dubleClickTime > new Date().getTime()) {
             executeClient ("client.animation.play", item);
-            //window.events.callEvent("hud.enter", 'SPACE', 'Нажмите чтобы отменить анимацию');
+            //window.events.callEvent("hud.enter", 'SPACE', 'Click to cancel animation');
         } else {
             dubleClickTime = new Date().getTime() + 1000;
             dubleClickData = item
