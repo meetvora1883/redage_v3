@@ -29,29 +29,45 @@
 
 <div class="auth__customization_elements">
     <div class="auth__customization_image">
-        <div class="auth__customization_mother" style="z-index: {customization_image_use === 1 ? 2 : 1};background-image: url({document.cloud + `img/parents/${$customization.motherId}.png`})" />
-        <div class="auth__customization_father" style="z-index: {customization_image_use === 0 ? 2 : 1};background-image: url({document.cloud + `img/parents/${$customization.fatherId}.png`})" />
+        <div
+            class="auth__customization_mother"
+            style="z-index: {customization_image_use === 1 ? 2 : 1};background-image: url({document.cloud + `img/parents/${$customization.motherId}.png`})"
+        />
+        <div
+            class="auth__customization_father"
+            style="z-index: {customization_image_use === 0 ? 2 : 1};background-image: url({document.cloud + `img/parents/${$customization.fatherId}.png`})"
+        />
     </div>
-    <div class="auth__customization_element" class:active={activeItem === 0} on:click={() => activeItem = 0}>
-        <div class="auth__customization_leftside">Отец</div>
+    <div
+        class="auth__customization_element"
+        class:active={activeItem === 0}
+        on:click={() => activeItem = 0}
+    >
+        <div class="auth__customization_leftside">Father</div>
 
         <ParentsButton
             gender={true}
             value={$customization.fatherId}
             active={activeItem === 0}
-            onChange={newparent => updateParents($gender, $customization.motherId, newparent)} />
+            onChange={newparent => updateParents($gender, $customization.motherId, newparent)}
+        />
     </div>
-    <div class="auth__customization_element" class:active={activeItem === 1} on:click={() => activeItem = 1}>
-        <div class="auth__customization_leftside">Мать</div>
+    <div
+        class="auth__customization_element"
+        class:active={activeItem === 1}
+        on:click={() => activeItem = 1}
+    >
+        <div class="auth__customization_leftside">Mother</div>
 
         <ParentsButton
             gender={false}
             value={$customization.motherId}
             active={activeItem === 1}
-            onChange={newparent => updateParents($gender, newparent, $customization.fatherId)} />
+            onChange={newparent => updateParents($gender, newparent, $customization.fatherId)}
+        />
     </div>
     <div class="auth__customization_element">
-        <div class="auth__customization_leftside">Схожесть</div>
+        <div class="auth__customization_leftside">Resemblance</div>
         <InputBlock
             id="shapemix"
             leftIcon="auth-mother"
@@ -60,10 +76,11 @@
             min={0}
             max={1}
             value={$customization.shapeMix}
-            callback={newvalue => updateShapeMix($gender, newvalue)} />
+            callback={newvalue => updateShapeMix($gender, newvalue)}
+        />
     </div>
     <div class="auth__customization_element">
-        <div class="auth__customization_leftside">Тон кожи</div>
+        <div class="auth__customization_leftside">Skin tone</div>
         <InputBlock
             id="skintone"
             leftIcon="auth-mother"
@@ -72,6 +89,7 @@
             min={0}
             max={1}
             value={$customization.skinTone}
-            callback={newvalue => updateSkinTone($gender, newvalue)} />
+            callback={newvalue => updateSkinTone($gender, newvalue)}
+        />
     </div>
 </div>
