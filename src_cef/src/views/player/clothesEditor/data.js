@@ -1,72 +1,72 @@
 export const clothesData = [
     {
-        name: "Маски",
+        name: "Masks",
         type: "masks",
         props: false,
         id: 1,
     },
     {
-        name: "Прически",
+        name: "Hairstyles",
         type: "hair",
         props: false,
         id: 2,
     },
     {
-        name: "Аксессуары",
+        name: "Accessories",
         type: "accessories",
         props: false,
         id: 7,
     },
     {
-        name: "Браслеты",
+        name: "Bracelets",
         type: "bracelets",
         props: true,
         id: 7,
     },
     {
-        name: "На уши",
+        name: "Earrings",
         type: "ears",
         props: true,
         id: 2,
     },
     {
-        name: "На глаза",
+        name: "Glasses",
         type: "glasses",
         props: true,
         id: 1,
     },
     {
-        name: "На голову",
+        name: "Hats",
         type: "hats",
         props: true,
         id: 0,
     },
     {
-        name: "На ноги",
+        name: "Legs",
         type: "legs",
         props: false,
         id: 4,
     },
     {
-        name: "Ботинки",
+        name: "Shoes",
         type: "shoes",
         props: false,
         id: 6,
     },
     {
-        name: "Верх",
+        name: "Tops",
         type: "tops",
         props: false,
         id: 11,
     },
     {
-        name: "Часы",
+        name: "Watches",
         type: "watches",
         props: true,
         id: 6,
     },
     {
-        name: "На спину",
+        name: "Backpacks",
         type: "bags",
         props: false,
         id: 5,
@@ -78,13 +78,13 @@ export const clothesData = [
         id: 8,
     },
     {
-        name: "Броники",
+        name: "Body Armor",
         type: "bodyarmors",
         props: false,
         id: 9,
     },
     {
-        name: "Декали",
+        name: "Decals",
         type: "decals",
         props: false,
         id: 10,
@@ -93,13 +93,13 @@ export const clothesData = [
 
 export const clothesDataToName = {
     undershirts: {
-        name: "Маски",
+        name: "Undershirts",
         type: "undershirts",
         props: false,
         id: 8,
     },
     torsos: {
-        name: "Маски",
+        name: "Torsos",
         type: "torsos",
         props: false,
         id: 3,
@@ -163,10 +163,10 @@ export const UndershortData = {
 }
 
 export const UndershortName = [
-    "Не может быть вверхом",
-    "полностью закрыта",
-    "Полностью растегнута",
-    "растегнута на половину",
+    "Cannot be used as top",
+    "Fully closed",
+    "Fully unbuttoned",
+    "Half unbuttoned",
 ]
 
 export const TorsosData = {
