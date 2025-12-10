@@ -46,8 +46,8 @@
                 <div>
                     <span>{menuItem [activeMain].title}</span>
                     {#if subdata.length}
-                        <div class="small">{translateText('player', 'Баланс')}: <span class="yellow">{format("money", subdata.split('/')[0])}$</span></div>
-                        <div class="small">{translateText('player', 'Максимум')}: <span class="yellow">{format("money", subdata.split('/')[1])}$</span></div>
+                        <div class="small">{translateText('player', 'Balance')}: <span class="yellow">{format("money", subdata.split('/')[0])}$</span></div>
+                        <div class="small">{translateText('player', 'Maximum')}: <span class="yellow">{format("money", subdata.split('/')[1])}$</span></div>
                     {/if}
                 </div>
             </div>
@@ -70,10 +70,10 @@
 
         <ul class="info_atm_button">
             <li on:click={onNext}>
-                <span class="info_head">{translateText('player', 'Далее')}</span>
+                <span class="info_head">{translateText('player', 'Next')}</span>
             </li>
             <li on:click={onPrev}>
-                <span class="info_head">{translateText('player', 'Назад')}</span>
+                <span class="info_head">{translateText('player', 'Back')}</span>
             </li>
         </ul>
 
