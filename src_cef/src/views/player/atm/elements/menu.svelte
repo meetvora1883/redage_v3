@@ -16,6 +16,6 @@
 
 <ul class="info_atm_button">
     <li on:click={() => onSelectMain(-1)}>
-        <span class="info_head">{translateText('player', 'Выйти')}</span>
+        <span class="info_head">{translateText('player', 'Exit')}</span>
     </li>
 </ul>
