@@ -29,8 +29,8 @@
                 <div class="auth__characters_block" class:active={true}>
                     <div class="auth__characters_character">
                         <div class="box-column">
-                            <b>{translateText('player', 'Создать')}</b>
-                            <div>{translateText('player', 'Персонажа')}</div>
+                            <b>{translateText('player', 'Create')}</b>
+                            <div>{translateText('player', 'Character')}</div>
                         </div>
                         <div class="auth__characters_circle orange">
                             <div class="auth__characters_circle_text">
@@ -44,13 +44,13 @@
                                 <div class="box red box-center">
                                     <span class="auth-female"></span>
                                 </div>
-                                <div>{translateText('player', 'Мужчина')}</div>
+                                <div>{translateText('player', 'Male')}</div>
                             </div>
                             <div class="auth__characters_button" class:active={!$gender} on:click={() => updateGender (0, false)}>
                                 <div class="box box-center">
                                     <span class="auth-man"></span>
                                 </div>
-                                <div>{translateText('player', 'Женщина')}</div>
+                                <div>{translateText('player', 'Female')}</div>
                             </div>
                         </div>
                     </div>
