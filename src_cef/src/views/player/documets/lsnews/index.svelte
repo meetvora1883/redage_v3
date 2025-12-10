@@ -19,10 +19,10 @@
 			<div class="logo"></div><div class="logo2"></div>
 		</div>
 		<div class="lc">
-			<div class="ava" style="background-image: url({gender === translateText('player', 'Мужской') ? Male : Female})"/>
+			<div class="ava" style="background-image: url({gender === translateText('player', 'Male') ? Male : Female})"/>
 			<div class="desc-bl">
 				<div class="desc">
-					<span>{translateText('player', 'Имя')}:</span>
+					<span>{translateText('player', 'Name')}:</span>
 					<span>{name}</span>
 				</div>
 				<div class="desc">
@@ -30,12 +30,12 @@
 					<span>RA{pad(cardNO)}</span>
 				</div>	
 				<div class="desc">
-					<span>{translateText('player', 'Фамилия')}:</span>
+					<span>{translateText('player', 'Last Name')}:</span>
 					<span>{surname}</span>
 				</div>
 							
 				<div class="desc">
-					<span>{translateText('player', 'Место жительства')}:</span>
+					<span>{translateText('player', 'Place of residence')}:</span>
 					<span>LOS SANTOS</span>
 				</div>
 			</div>
