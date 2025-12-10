@@ -93,14 +93,14 @@
                 Q
             </div>
             <div class="header__element" class:active={SelectViews === "News"} on:click={() => OnSelectViews("News")}>
-                {translateText('player2', 'Новости')}
+                {translateText('player2', 'News')}
             </div>
             <div class="header__element" class:active={SelectViews === "Chars"} on:click={() => OnSelectViews("Chars")}>
-                {translateText('player2', 'Авторизация')}
+                {translateText('player2', 'Authorization')}
             </div>
             {#if isMergerToggled}
             <div class="header__element" class:active={SelectViews === "Merger"} on:click={() => OnSelectViews("Merger")}>
-                {translateText('player2', 'Перенести персонажей с White/Red')}
+                {translateText('player2', 'Transfer characters from White/Red')}
             </div>
             {/if}
             <div class="header-key box-center" on:click={onClickE}>
