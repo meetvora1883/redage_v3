@@ -18,30 +18,31 @@
 	<div class="content">
 		<div class="title">
 			<div class="star"></div>
-				EMERGENCY MEDICAL SERVICE
+			EMERGENCY MEDICAL SERVICE
 			<div class="star"></div>
 		</div>
 		
 		<div class="left">
-			<div class="ava" style="background-image: url({gender === "Мужской" ? Male : Female})"/>
+			<div class="ava" style="background-image: url({gender === "male" ? Male : Female})"/>
 			<div class="box-column">
 				<div class="label">
-					<span>{translateText('player', 'Имя')}:</span>
+					<span>{translateText('player', 'Name')}:</span>
 					<span>{name}</span>
 				</div>
 				<div class="label">
-					<span>{translateText('player', 'Проживание')}:</span>
+					<span>{translateText('player', 'Residence')}:</span>
 					<span>Los Santos</span>
 				</div>
 			</div>
 		</div>
+
 		<div class="right emsblock">
 			<div class="title-r"><span class="ic_ems"></span>EMS</div>
 			<div class="h2r">ONE MISSION ONE TEAM</div>
 			
 			<div class="serial">
-				<img src={Serial} alt="" />
-				<div class="id">RA{pad(cardNO)}</div>
+				<img src={Serial} alt="serial" />
+				<div class="id">EMS{pad(cardNO)}</div>
 			</div>
 		</div>
 	</div>
