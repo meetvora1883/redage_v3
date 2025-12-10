@@ -36,20 +36,20 @@
 
     const componentsData = [
         {
-            name: 'Причёска',
+            name: 'Hairstyle',
             dataname: 'hair',
             onlysex: "all",
             colorSelector: hairColors
         },
         {
-            name: 'Брови',
+            name: 'Eye-Brows',
             dataname: 'eyebrows',
             onlysex: "all",
             opacitySelector: true,
             colorSelector: hairColors
         },
         {
-            name: 'Борода',
+            name: 'Beard',
             dataname: 'facialhair',
             onlysex: true,
             lockSelectorZero: true,
@@ -57,47 +57,47 @@
             colorSelector: hairColors
         },
         {
-            name: 'Дефекты кожи',
+            name: 'Skin defects',
             dataname: 'blemishes',
             onlysex: "all",
             lockSelectorZero: true,
             opacitySelector: true
         },
         {
-            name: 'Старение кожи',
+            name: 'Skin aging',
             dataname: 'ageing',
             onlysex: "all",
             lockSelectorZero: true,
             opacitySelector: true
         },
         {
-            name: 'Тип кожи',
+            name: 'Skin type',
             dataname: 'complexion',
             onlysex: "all",
             lockSelectorZero: true,
             opacitySelector: true
         },
         {
-            name: 'Родинки и веснушки',
+            name: 'Moles and freckles',
             dataname: 'molesfreckles',
             onlysex: "all",
             lockSelectorZero: true,
             opacitySelector: true
         },
         {
-            name: 'Повреждение кожи',
+            name: 'Skin damage',
             dataname: 'sundamage',
             onlysex: "all",
             lockSelectorZero: true,
             opacitySelector: true
         },
         {
-            name: 'Цвет глаз',
+            name: 'Eye color',
             dataname: 'eyescolor',
             onlysex: "all"
         },
         {
-            name: 'Помада',
+            name: 'Lipstick',
             dataname: 'lipstick',
             onlysex: false,
             lockSelectorZero: true,
@@ -197,7 +197,7 @@
     {#if componentsDataToGender[activeItem].opacitySelector}
     <div class="title margin-top-20">{componentsDataToGender[activeItem].name}:</div>
     <div class="auth__customization_element">
-        <div class="auth__customization_leftside">Насыщенность:</div>
+        <div class="auth__customization_leftside">saturation:</div>
         <InputBlock
             id="appearance"
             leftText="arrow-down"
