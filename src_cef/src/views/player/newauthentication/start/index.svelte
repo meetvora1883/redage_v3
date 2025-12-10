@@ -74,10 +74,10 @@
 <div id="newauthentication">
     {#if $isSend}
     <div class="newauthentication__popup">
-        <div class="newauthentication__popup_title">{translateText('player2', 'Мы отправили письмо вам на почту!')}</div>
-        <div class="newauthentication__popup_subtitle">{translateText('player2', 'Подтвердите адрес электронной почты, чтобы перейти к созданию персонажа.')}</div>
+        <div class="newauthentication__popup_title">{translateText('player2', 'We have sent you an email!')}</div>
+        <div class="newauthentication__popup_subtitle">{translateText('player2', 'Please confirm your email address to proceed to character creation.')}</div>
         <div class="main__button main__button_mail" on:click={() => isSend.set (false)}>
-            {translateText('player2', 'Я перепутал почту..')}
+            {translateText('player2', 'I mixed up the email..')}
         </div>
         <div class="auth-mail newauthentication__popup_iconmail"></div>
     </div>
@@ -90,15 +90,15 @@
                 Q
             </div>
             <div class="header__element" class:active={SelectViews === "News"} on:click={() => OnSelectViews("News")}>
-                {translateText('player2', 'Новости')}
+                {translateText('player2', 'News')}
             </div>
             {#if PagesSorted.includes("Authentication")}
             <div class="header__element" class:active={SelectViews === "Authentication"} on:click={() => OnSelectViews("Authentication")}>
-                {translateText('player2', 'Авторизация')}
+                {translateText('player2', 'Authorization')}
             </div>
             {:else if PagesSorted.includes("Registration")}
             <div class="header__element" class:active={SelectViews === "Registration"} on:click={() => OnSelectViews("Registration")}>
-                {translateText('player2', 'Регистрация')}
+                {translateText('player2', 'Registration')}
             </div>
             {/if}
             <div class="header-key box-center" class:active={false} on:click={onClickE}>
