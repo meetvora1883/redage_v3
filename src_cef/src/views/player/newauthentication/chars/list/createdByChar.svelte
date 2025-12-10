@@ -42,7 +42,7 @@
     }
 
     const GetProgress = (exp) => {
-       let progress = exp * 100 / GetMaxExp (charData.LVL);
+        let progress = exp * 100 / GetMaxExp (charData.LVL);
         
         if (progress > 100) progress = 100;
 
@@ -112,20 +112,25 @@
     <div class="auth__characters_hover">
         {#if char.Data && char.Data.DeleteData === "-"}
             {#if !isDell}
-                <div>Удалить персонажа</div>
+                <div>Delete character</div>
                 <div class="main__button_square large box-center" on:click={(e) => onDell(e)}>
-                    Удалить
+                    Delete
                 </div>
             {:else}
-                <div>Вы уверены?</div>
+                <div>Are you sure?</div>
                 <div class="main__button_square large box-center" on:click={(e) => onDell(e)}>
-                    Удалить
+                    Delete
                 </div>
             {/if}
         {:else}
-        <div>Удалится через {moment.utc($elapsed).format("DD") -1} дня, {moment.utc($elapsed).format("HH")} часов, {moment.utc($elapsed).format("mm")} минут.</div>
+        <div>
+            Will be deleted in
+            {moment.utc($elapsed).format("DD") - 1} days,
+            {moment.utc($elapsed).format("HH")} hours,
+            {moment.utc($elapsed).format("mm")} minutes.
+        </div>
         <div class="main__button_square large box-center" on:click={(e) => onDell(e, true)}>
-            Отменить
+            Cancel
         </div>
         {/if}
     </div>
