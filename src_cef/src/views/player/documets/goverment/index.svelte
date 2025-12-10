@@ -29,15 +29,15 @@
 
 			<div class="pl1">
 				<div class="desc">
-					<span>{translateText('player', 'Имя')}</span>
+					<span>{translateText('player', 'Name')}</span>
 					<span>{name}</span>
 				</div>
 				<div class="desc">
-					<span>{translateText('player', 'Фамилия')}</span>
+					<span>{translateText('player', 'Last Name')}</span>
 					<span>{surname}</span>
 				</div>
 				<div class="desc">
-					<span>{translateText('player', 'Место жительства')}</span>
+					<span>{translateText('player', 'Place of residence')}</span>
 					<span>LOS SANTOS</span>
 				</div>
 			</div>
