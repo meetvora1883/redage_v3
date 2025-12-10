@@ -22,24 +22,24 @@
 
     const menuItem = [
         {
-            "title":translateText('player', 'Внести средства'),
-            "icon":"ic-user-shared-fill"
+            "title": translateText('player', 'Deposit funds'),
+            "icon": "ic-user-shared-fill"
         },
         {
-            "title":translateText('player', 'Вывести средства'),
-            "icon":"ic-user-received-fill"
+            "title": translateText('player', 'Withdraw funds'),
+            "icon": "ic-user-received-fill"
         },
         {
-            "title":translateText('player', 'Внести налог за недвижимость'),
-            "icon":"ic-home-fill"
+            "title": translateText('player', 'Pay property tax'),
+            "icon": "ic-home-fill"
         },
         {
-            "title":translateText('player', 'Внести налог за бизнес'),
-            "icon":"ic-store-fill"
+            "title": translateText('player', 'Pay business tax'),
+            "icon": "ic-store-fill"
         },
         {
-            "title":translateText('player', 'Перевести на другой счет'),
-            "icon":"ic-article-fill"
+            "title": translateText('player', 'Transfer to another account'),
+            "icon": "ic-article-fill"
         }
     ];
 
@@ -59,9 +59,9 @@
             subdata = data[1];
             type = data[0];            
 
-            if(type === 1) SelectViews = "Menu";
-            else if(type === 2) SelectViews = "Input";
-            else if(type === 3) SelectViews = "Business";
+            if (type === 1) SelectViews = "Menu";
+            else if (type === 2) SelectViews = "Input";
+            else if (type === 3) SelectViews = "Business";
         },
         reset: () => {
             subdata = [];
@@ -71,9 +71,9 @@
     }
 
     const onSelectMain = (index) => {
-        activeMain =  index;
+        activeMain = index;
 
-        executeClient ("atmCB", type, index);
+        executeClient("atmCB", type, index);
     }
 </script>
 
@@ -83,33 +83,48 @@
             <div class="head">
                 <div class="title">
                     <div>
-                    {translateText('player', 'Банкомат')} <span class="bold">ATM</span>
+                        {translateText('player', 'ATM')} <span class="bold">ATM</span>
                     </div>
                     <span class="logo" />
                 </div>
-                <p>{translateText('player', 'Самые быстрые и надежные Банкоматы “ATM” Работают 24/7, расположены по всему штату!')}</p>
-                <div class="prevButton">{translateText('player', 'Без комиссии')}</div>
+                <p>
+                    {translateText(
+                        'player',
+                        'The fastest and most reliable “ATM” machines work 24/7 and are located all across the state!'
+                    )}
+                </p>
+                <div class="prevButton">
+                    {translateText('player', 'No fee')}
+                </div>
             </div>
         </div>
         <div class="cont">
             <ul class="info_atm">
                 <li id="number">
                     <span class="ib bank-card"></span>
-                    <span class="info_head">{translateText('player', 'Номер счёта')}</span>
+                    <span class="info_head">{translateText('player', 'Account number')}</span>
                     <span class="info_val">{number}</span>
                 </li>
                 <li id="holder">
                     <span class="ib bank-user"></span>
-                    <span class="info_head">{translateText('player', 'Владелец счёта')}</span>
+                    <span class="info_head">{translateText('player', 'Account holder')}</span>
                     <span class="info_val">{holder}</span>
                 </li>
                 <li id="balance">
                     <span class="ib bank-fill"></span>
-                    <span class="info_head">{translateText('player', 'На банковском счете')}</span>
+                    <span class="info_head">{translateText('player', 'Bank account balance')}</span>
                     <span class="info_val">{format("money", $charBankMoney)}$</span>
                 </li>
             </ul>
-            <svelte:component this={Views[SelectViews]} {menuItem} {type} {subdata} {activeMain} {placeholder} {onSelectMain} />
+            <svelte:component
+                this={Views[SelectViews]}
+                {menuItem}
+                {type}
+                {subdata}
+                {activeMain}
+                {placeholder}
+                {onSelectMain}
+            />
         </div>
     </div>
 </div>
