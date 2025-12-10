@@ -13,103 +13,103 @@
 
     const componentsData = [
         {
-            name: 'Лоб',
+            name: 'Forehead',
             dataname: 'brow',
             preset: 0,
             gridType: false,
 
-            xgrid: ["Плоский", "Выпуклый"],
-            ygrid: ["Высокий", "Низкий"],
+            xgrid: ['Flat', 'Convex'],
+            ygrid: ['High', 'Low'],
         },
         {
-            name: 'Глаза',
+            name: 'Eyes',
             dataname: 'eyes',
             preset: 0,
             gridType: true,
 
-            xgrid: ["Узкие", "Широкие"],
+            xgrid: ['Narrow', 'Wide'],
             ygrid: [],
         },
         {
-            name: 'Нос',
+            name: 'Nose',
             dataname: 'nose',
             preset: 0,
             gridType: false,
 
-            xgrid: ["Узкий", "Широкий"],
-            ygrid: ["Кверху", "Низкий"],
+            xgrid: ['Narrow', 'Wide'],
+            ygrid: ['Upturned', 'Low'],
         },
         {
-            name: 'Проф. носа',
+            name: 'Nose profile',
             dataname: 'noseprofile',
             preset: 0,
             gridType: false,
 
-            xgrid: ["Малый", "Большой"],
-            ygrid: ["С горбинкой", "Выгнутый"],
+            xgrid: ['Small', 'Large'],
+            ygrid: ['With hump', 'Curved'],
         },
         {
-            name: 'Кончик носа',
+            name: 'Nose tip',
             dataname: 'nosetip',
             preset: 0,
             gridType: false,
 
-            xgrid: ["Скос влево", "Скос вправо"],
-            ygrid: ["Кончик вверх", "Кончик вниз"],
+            xgrid: ['Slant left', 'Slant right'],
+            ygrid: ['Tip up', 'Tip down'],
         },
         {
-            name: 'Скулы',
+            name: 'Cheekbones',
             dataname: 'cbones',
             preset: 0,
             gridType: false,
 
-            xgrid: ["Худые", "Надутые"],
-            ygrid: ["Высокие", "Низкие"],
+            xgrid: ['Thin', 'Full'],
+            ygrid: ['High', 'Low'],
         },
         {
-            name: 'Щёки',
+            name: 'Cheeks',
             dataname: 'cheeks',
             preset: 0,
             gridType: true,
 
-            xgrid: ["Худые", "Надутые"],
+            xgrid: ['Thin', 'Full'],
             ygrid: [],
         },
         {
-            name: 'Губы',
+            name: 'Lips',
             dataname: 'lips',
             preset: 0,
             gridType: true,
 
-            xgrid: ["Тонкие", "Толстые"],
+            xgrid: ['Thin', 'Thick'],
             ygrid: [],
         },
         {
-            name: 'Челюсть',
+            name: 'Jaw',
             dataname: 'jaw',
             preset: 0,
             gridType: false,
 
-            xgrid: ["Узкая", "Широкая"],
-            ygrid: ["Круглая", "Квадратная"],
+            xgrid: ['Narrow', 'Wide'],
+            ygrid: ['Round', 'Square'],
         },
         {
-            name: 'Профиль подбородка',
+            name: 'Chin profile',
             dataname: 'chinprofile',
             preset: 0,
             gridType: false,
 
-            xgrid: ["Короткий", "Длинный"],
-            ygrid: ["Высокий", "Низкий"],
+            xgrid: ['Short', 'Long'],
+            ygrid: ['High', 'Low'],
         },
         {
-            name: 'Форма подбородка',
+            name: 'Chin shape',
             dataname: 'chinform',
             preset: 0,
             gridType: false,
 
-            xgrid:["Квадратный", "Заострённый"],
-            ygrid: ["Округлый", "С ямочкой"],
+            xgrid: ['Square', 'Pointed'],
+            ygrid: ['Round', 'With dimple'],
         }
     ];
 
