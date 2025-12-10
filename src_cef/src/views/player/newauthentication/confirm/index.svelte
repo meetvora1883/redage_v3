@@ -16,12 +16,12 @@
 <div class="popup__newhud">
     <div class="popup__newhud_box">
         <div class="popup__newhud_title">
-            <span class="hud__icon-info popup__newhud_icon"/> {translateText('player2', 'Подтверждение')}
+            <span class="hud__icon-info popup__newhud_icon"/> {translateText('player2', 'Confirmation')}
         </div>
-        <div class="popup__newhud_text">{translateText('player2', 'Вы уверены, что хотите зарандомить внешность?')}</div>
+        <div class="popup__newhud_text">{translateText('player2', 'Are you sure you want to randomize appearance?')}</div>
         <div class="popup__newhud__buttons">
-            <div class="popup__newhud_button" in:fly={{ y: 50, duration: 350 }} on:click={() => onClickRandom()}>{translateText('player2', 'Подтвердить')}</div>
-            <div class="popup__newhud_button" in:fly={{ y: 50, duration: 750 }} on:click={() => onPopupToogle()}>{translateText('player2', 'Отмена')}</div>
+            <div class="popup__newhud_button" in:fly={{ y: 50, duration: 350 }} on:click={() => onClickRandom()}>{translateText('player2', 'Confirm')}</div>
+            <div class="popup__newhud_button" in:fly={{ y: 50, duration: 750 }} on:click={() => onPopupToogle()}>{translateText('player2', 'Cancel')}</div>
         </div>
     </div>
 </div>
