@@ -19,30 +19,30 @@
 	<div class="content">
 		<div class="desc-bl">
 			<div class="m1">
-				<div class="ava" style="background-image: url({gender === translateText('player', 'Мужской') ? Male : Female})"/>
+				<div class="ava" style="background-image: url({gender === translateText('player', 'Male') ? Male : Female})"/>
 				<div class="passport__idcard">
 					<b>ID-CARD</b>
 					<span class="number">№ {pad(cardNO)}</span>
 				</div>
 				<div class="pl1 m-t50">
 					<div class="desc">
-						<span>{translateText('player', 'Имя')}:</span>
+						<span>{translateText('player', 'Name')}:</span>
 						<span class="passport__name">{name}</span>
 					</div>
 
 					<div class="desc m-t20">
-						<span>{translateText('player', 'Фамилия')}:</span>
+						<span>{translateText('player', 'surname')}:</span>
 						<span class="passport__name">{surname}</span>
 					</div>
 				</div>
 					
 				<div class="pl2 m-t50">
 					<div class="desc">
-						<span>{translateText('player', 'Дата прибытия')}:</span>
+						<span>{translateText('player', 'Arrival date')}:</span>
 						<span class="passport__name">{dateReg}</span>
 					</div>	
 					<div class="desc m-t20">
-						<span>{translateText('player', 'Пол')}:</span>
+						<span>{translateText('player', 'Gender')}:</span>
 						<span class="passport__name">{gender}</span>
 					</div>						
 				</div>
@@ -50,7 +50,7 @@
 				
 			<div class="m2">
 				<div class="desc">
-					<span class="passport__licenses_title">{translateText('player', 'Лицензии')}:</span>
+					<span class="passport__licenses_title">{translateText('player', 'licenses')}:</span>
 					<span class="passport__licenses">
 						<div class="icon-box" class:active={Boolean(lic[0]) == true}>
 							<span class="inv-lic-moto" />
