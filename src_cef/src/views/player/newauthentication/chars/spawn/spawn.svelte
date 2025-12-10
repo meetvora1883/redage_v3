@@ -101,37 +101,52 @@
 {#if !isBan && DeleteData === "-"}
 <div class="auth__center">
     <div class="auth__spawn_elements" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
-        <div class="auth__spawn_element" on:click={() => onSelectSpawnId (spawnData.pos)} class:use={true} class:active={selectSpawnId == spawnData.pos}>
-            <div>Место выхода</div>
-            <div class="auth__small_text">Вы ничего не потеряете.</div>
+        <div
+            class="auth__spawn_element"
+            on:click={() => onSelectSpawnId (spawnData.pos)}
+            class:use={true}
+            class:active={selectSpawnId == spawnData.pos}
+        >
+            <div>Spawn location</div>
+            <div class="auth__small_text">You will not lose anything.</div>
             <span class="auth-exit-place"></span>
         </div>
         {#if houseId !== "-"}
-        <div class="auth__spawn_element" on:click={() => onSelectSpawnId (spawnData.house)} class:use={true} class:active={selectSpawnId == spawnData.house}>
+        <div
+            class="auth__spawn_element"
+            on:click={() => onSelectSpawnId (spawnData.house)}
+            class:use={true}
+            class:active={selectSpawnId == spawnData.house}
+        >
             {#if !spawnConfirm}
             <div class="box-column">
-                <div>Дома</div>
-                <div class="auth__small_text">Вы потеряете нелегальные предметы.</div>
+                <div>Home</div>
+                <div class="auth__small_text">You will lose illegal items.</div>
             </div>
             <span class="auth-home"></span>
             {:else}
-            <div class="auth__small_text">Вы потеряете нелегальные предметы</div>
+            <div class="auth__small_text">You will lose illegal items</div>
             <div class="box-flex">
                 <div class="auth__spawn_btn">
-                    Да
+                    Yes
                 </div>
                 <div class="auth__spawn_btn">
-                    Нет
+                    No
                 </div>
             </div>
             {/if}
         </div>
         {/if}
         {#if FractionID > 0 || OrganizationID > 0}
-        <div class="auth__spawn_element" on:click={() => onSelectSpawnId (spawnData.org)} class:use={true} class:active={selectSpawnId == spawnData.org}>
+        <div
+            class="auth__spawn_element"
+            on:click={() => onSelectSpawnId (spawnData.org)}
+            class:use={true}
+            class:active={selectSpawnId == spawnData.org}
+        >
             <div class="box-column">
-                <div>Во фракции</div>
-                <div class="auth__small_text">Вы потеряете нелегальные предметы.</div>
+                <div>In faction</div>
+                <div class="auth__small_text">You will lose illegal items.</div>
             </div>
             <span class="auth-fraction"></span>
         </div>
@@ -142,7 +157,7 @@
             <b>&#8592;</b>
         </div>
         <div class="main__button main_button_size_large" style="margin-right: 0" on:click={onSpawn}>
-            <div class="main__button_left box-center">Войти</div>
+            <div class="main__button_left box-center">Enter</div>
             <div class="main__button_right box-center">
                 <div class="main__button_square box-center">
                     <span class="auth-arrow"/>
