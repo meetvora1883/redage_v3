@@ -6,12 +6,12 @@
     import './css/main.css'
 
     const listPage = [
-        {name: translateText('player', 'Основные'), icon: 'icon-keyboard', type: "all"},
-        {name: translateText('player', 'Транспорт'), icon: 'icon-keyboard', type: "vehicle"},
-        {name: translateText('player', 'Быстрый доступ'), icon: 'icon-keyboard', type: "fast"},
-        {name: translateText('player', 'Фракционные'), icon: 'icon-keyboard', type: "fraction"},
-        {name: translateText('player', 'Разное'), icon: 'icon-keyboard', type: "other"},
-        {name: translateText('player', 'Для администрации'), icon: 'icon-keyboard', type: "admin"}
+        {name: translateText('player', 'General'), icon: 'icon-keyboard', type: "all"},
+        {name: translateText('player', 'Transport'), icon: 'icon-keyboard', type: "vehicle"},
+        {name: translateText('player', 'Quick access'), icon: 'icon-keyboard', type: "fast"},
+        {name: translateText('player', 'Faction'), icon: 'icon-keyboard', type: "fraction"},
+        {name: translateText('player', 'Misc'), icon: 'icon-keyboard', type: "other"},
+        {name: translateText('player', 'Admin only'), icon: 'icon-keyboard', type: "admin"}
     ];
 
     let listId = "all";
@@ -59,14 +59,17 @@
         return title;
     }
 </script>
+
 <div class="rd-body-inventory-donate">
     <div class="universal_menu module_binder">
-        <div class="wrap" >
+        <div class="wrap">
             <ul class="d-md">
                 <li class="disabled">
                     <div class="space-between">
-                        {translateText('player', 'Биндер')}
-                        <button class="binder-button" on:click={() => executeClient ("client:binder", "refresh", listId)}>{translateText('player', 'Сбросить')}</button>
+                        {translateText('player', 'Binder')}
+                        <button class="binder-button" on:click={() => executeClient("client:binder", "refresh", listId)}>
+                            {translateText('player', 'Reset')}
+                        </button>
                     </div>
                 </li>
                 {#each listPage as value, index}
@@ -78,7 +81,7 @@
             </ul>
 
             <div class="r">
-                <button class="binder-button-close" on:click={() => executeClient ("client:binder", "close")}>X</button>
+                <button class="binder-button-close" on:click={() => executeClient("client:binder", "close")}>X</button>
                 <div class="md sett">
                     <div class="title">{setTitle ()}</div>
                     <ul class="settings">
