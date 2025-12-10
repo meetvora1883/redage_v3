@@ -41,11 +41,11 @@
 <div class="main">
     <div class="main__box">
         <div class="main__forms">
-            <InputCustom updateLang={(lang) => language = lang} setValue={(value) => loginInput = value} value={loginInput} isFocus={loginIsFocus} placeholder={translateText('player2', 'Логин или почта')} type="text" icon="auth-user"/>
-            <InputCustom updateLang={(lang) => language = lang} setValue={(value) => passwordInput = value} value={passwordInput} isFocus={passwordIsFocus} placeholder={translateText('player2', 'Пароль')} type="password" icon="auth-lock"/>
+            <InputCustom updateLang={(lang) => language = lang} setValue={(value) => loginInput = value} value={loginInput} isFocus={loginIsFocus} placeholder={translateText('player2', 'Login ID or email')} type="text" icon="auth-user"/>
+            <InputCustom updateLang={(lang) => language = lang} setValue={(value) => passwordInput = value} value={passwordInput} isFocus={passwordIsFocus} placeholder={translateText('player2', 'Password')} type="password" icon="auth-lock"/>
             <div class="box-flex">
                 <div class="main__button main_button_size_large" on:click={onLogin}>
-                    <div class="main__button_left box-center">{translateText('player2', 'Войти')}</div>
+                    <div class="main__button_left box-center">{translateText('player2', 'Login')}</div>
                     <div class="main__button_right box-center">
                         <div class="main__button_square box-center">
                             <span class="auth-arrow"/>
