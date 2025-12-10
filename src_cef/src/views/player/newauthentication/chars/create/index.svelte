@@ -15,11 +15,11 @@
     let elemetsId = 0;
 
     const elemetsSettings = [
-        {elemets: Info, "title": translateText('player2', 'Наследственность'),"icon": "auth-hzcheeto", desc: translateText('player2', 'Выберите родителей своего персонажа, схожесть с одним из них и желаемый тон кожи.')},
-        {elemets: Characteristics, "title": translateText('player2', 'Лицо'),"icon": "auth-smile", desc: translateText('player2', 'Настройте лицо своему персонажу максимально подробно: от лба и до формы подбородка!')},
-        {elemets: Appearance, "title": translateText('player2', 'Особенности'),"icon": "auth-brush", desc: translateText('player2', 'Украсьте своего персонажа уникальными особенностями, подобрав цвет глаз, наличие веснушек, брови и не только!')},
-        {elemets: Clothes, "title": translateText('player2', 'Комплекты одежды'),"icon": "auth-shirt", desc: translateText('player2', 'Тут вы можете выбрать Пол,Цвет кожи своему персонажу')},
-        //{elemets: <ExportChar />, "title": "Эскпорт персонажа","icon": "character-file-chart", desc: "Тут вы можете выбрать Пол,Цвет кожи своему персонажу"}
+        {elemets: Info, "title": translateText('player2', 'Heredity'),"icon": "auth-hzcheeto", desc: translateText('player2', 'Select your character's parents, their resemblance to one of them, and the desired skin tone.')},
+        {elemets: Characteristics, "title": translateText('player2', 'Face'),"icon": "auth-smile", desc: translateText('player2', 'Customize your character's face in as much detail as possible: from the forehead to the shape of the chin!')},
+        {elemets: Appearance, "title": translateText('player2', 'Peculiarities'),"icon": "auth-brush", desc: translateText('player2', 'Personalize your character with unique features by choosing eye color, freckles, eyebrows, and more.!')},
+        {elemets: Clothes, "title": translateText('player2', 'Clothing sets'),"icon": "auth-shirt", desc: translateText('player2', 'Here you can choose the Gender and Skin Color of your character.')},
+        //{elemets: <ExportChar />, "title": "Export character","icon": "character-file-chart", desc: "Here you can choose the Gender and Skin Color of your character."}
     ];
 
     const onSelectCategory = (index) => {
@@ -96,7 +96,7 @@
 
     <div class="auth__buttons" style="justify-content: center;" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
         <div class="main__button main_button_size_large" style="margin-right: 0" on:click={onCreate}>
-            <div class="main__button_left box-center">{translateText('player2', 'Создать')}</div>
+            <div class="main__button_left box-center">{translateText('player2', 'Create')}</div>
             <div class="main__button_right box-center">
                 <div class="main__button_square box-center">
                     <span class="auth-arrow"/>
@@ -123,7 +123,7 @@
                 <span class="auth-random"></span>
             </div>
             {#if false}
-                <div class="auth__customization_categorie" title="Перенос внешности с Classic">
+                <div class="auth__customization_categorie" title="Transferring appearance from Classic">
                     <span class="auth-person"></span>
                 </div>
             {/if}
