@@ -35,8 +35,8 @@
 <div class="auth__characters_block" class:active={$selectIndex === charid} on:click={onSelectChar}>
     <div class="auth__characters_character">
         <div class="box-column">
-            <b>{translateText('player2', 'Создать')}</b>
-            <div>{translateText('player2', 'Персонажа')}</div>
+            <b>{translateText('player2', 'Create')}</b>
+            <div>{translateText('player2', 'Character')}</div>
         </div>
         <div class="auth__characters_circle orange">
             <div class="auth__characters_circle_text">
@@ -50,18 +50,30 @@
                 <div class="box red box-center">
                     <span class="auth-female"></span>
                 </div>
-                <div>{translateText('player2', 'Мужчина')}</div>
+                <div>{translateText('player2', 'Male')}</div>
             </div>
             <div class="auth__characters_button" class:active={!$gender} on:click={() => updateGender (charid, false)}>
                 <div class="box box-center">
                     <span class="auth-man"></span>
                 </div>
-                <div>{translateText('player2', 'Женщина')}</div>
+                <div>{translateText('player2', 'Female')}</div>
             </div>
         </div>
-        <InputCustom cl="auth__characters_input" setValue={(value) => FirstNameLocal = value} value={FirstNameLocal} placeholder="Имя" type="text" />
-        <InputCustom cl="auth__characters_input" setValue={(value) => LastNameLocal = value} value={LastNameLocal} placeholder="Фамилия" type="text" />
-        <!--<input class="auth__characters_input" placeholder="Имя" bind:value={FirstNameLocal}>
-        <input class="auth__characters_input" placeholder="Фамилия" bind:value={LastNameLocal}>-->
+        <InputCustom
+            cl="auth__characters_input"
+            setValue={(value) => FirstNameLocal = value}
+            value={FirstNameLocal}
+            placeholder="First Name"
+            type="text"
+        />
+        <InputCustom
+            cl="auth__characters_input"
+            setValue={(value) => LastNameLocal = value}
+            value={LastNameLocal}
+            placeholder="Last Name"
+            type="text"
+        />
+        <!--<input class="auth__characters_input" placeholder="First Name" bind:value={FirstNameLocal}>
+        <input class="auth__characters_input" placeholder="Last Name" bind:value={LastNameLocal}>-->
     </div>
 </div>
