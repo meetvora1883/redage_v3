@@ -33,12 +33,12 @@
 			<div>Security</div>
 			<div class="usa"></div>
 			<div class="label">
-				<span>{translateText('player', 'Имя')}:</span>
+				<span>{translateText('player', 'Name')}:</span>
 				<span>{name} {surname}</span>
 			</div>
 
 			<div class="label">
-				<span>{translateText('player', 'Должность')}:</span>
+				<span>{translateText('player', 'Position')}:</span>
 				<span>{rank}</span>
 			</div>
 
