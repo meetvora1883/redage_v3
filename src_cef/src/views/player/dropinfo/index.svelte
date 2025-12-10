@@ -46,39 +46,39 @@
 <div class="box-dropinfo">
     {#if !viewData}
     <div class="box-KeyInfo" on:click={onEnter}>
-        <div class="KeyInfo text">{translateText('player', 'ЛКМ')}</div>
-        {translateText('player', 'Поставить')}
+        <div class="KeyInfo text">{translateText('player', 'LMB')}</div>
+        {translateText('player', 'Put')}
     </div>
     <div class="box-KeyInfo">
-        <div class="KeyInfo text">{translateText('player', 'ПКМ')}</div>
-        {translateText('player', 'Отменить')}
+        <div class="KeyInfo text">{translateText('player', 'RMB')}</div>
+        {translateText('player', 'Cancel')}
     </div>
     {:else}
     <div class="box-KeyInfo" on:click={onEnter}>
         <div class="KeyInfo text">ENTER</div>
-        {translateText('player', 'Поставить')}
+        {translateText('player', 'Put')}
     </div>
     <div class="box-KeyInfo">
-        <div class="KeyInfo text">{translateText('player', 'Пробел')}</div>
-        {translateText('player', 'Свободный режим')}
+        <div class="KeyInfo text">{translateText('player', 'Space')}</div>
+        {translateText('player', 'Free mode')}
     </div>
     <div class="box-KeyInfo" on:click={onClose}>
         <div class="KeyInfo text">Esc</div>
-        {translateText('player', 'Отменить')}
+        {translateText('player', 'Cancel')}
     </div>
     <div class="box-KeyInfo">
-        <div class="KeyInfo text">{translateText('player', 'ПКМ')}</div>
-        {translateText('player', 'Сменить режим')}
+        <div class="KeyInfo text">{translateText('player', 'RMB')}</div>
+        {translateText('player', 'Change the mode')}
     </div>
     {/if}
     {#if !isUpdateType}
     <div class="box-KeyInfo" on:click={UpdateType}>
         <div class="KeyInfo text">TAB</div>
-        {translateText('player', 'Сменить режим редактирования')}
+        {translateText('player', 'Change editing mode')}
     </div>
     {/if}
     <div class="box-KeyInfo">
         <div class="KeyInfo text">V</div>
-        {translateText('player', 'Позиция камеры')}
+        {translateText('player', 'Camera position')}
     </div>
 </div>
