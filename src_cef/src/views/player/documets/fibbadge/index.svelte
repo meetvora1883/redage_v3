@@ -20,7 +20,7 @@
 					</div>							
 								
 				</div>		
-				<div class="ava" style="background-image: url({gender === "Мужской" ? Male : Female})"/>			
+				<div class="ava" style="background-image: url({gender === "Male" ? Male : Female})"/>			
 				<div class="pl2">
 					<div class="t1">SPECIAL  AGENT</div>
 					<div class="t2">{name}</div>
