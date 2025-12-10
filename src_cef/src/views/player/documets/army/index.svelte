@@ -23,22 +23,24 @@
 	
 		<div class="ar1">
 			<div class="title">
-			National Guard of the Los Santos
+				National Guard of Los Santos
 			</div>
 			
 			<img src={Armylogo} alt="" />
 		</div>
+
 		<div class="ava">
 			<img src={gender === "male" ? Male : Female} width="140" height="172" alt="avatar"/>
 			<div>Fort Zancudo</div>
 			<div class="usa"></div>
+
 			<div class="label">
-				<span>{translateText('player', 'Имя')}:</span>
+				<span>{translateText('player', 'Name')}:</span>
 				<span>{name} {surname}</span>
 			</div>
 
 			<div class="label">
-				<span>{translateText('player', 'Должность')}:</span>
+				<span>{translateText('player', 'Position')}:</span>
 				<span>{rank}</span>
 			</div>
 
@@ -51,7 +53,7 @@
 	</div>
 	
 	<p class="bottom-ar">
-	THIS IS THE WARRANT AND AUTHORITY FOR EXECUTING THE DUTIES OF THEIR OFFICE.
+		THIS IS THE WARRANT AND AUTHORITY FOR EXECUTING THE DUTIES OF THEIR OFFICE.
 	</p>
 	<div class="serial"></div>
 </div>
