@@ -25,21 +25,21 @@
 					<span>POLICE DEPARTMENT</span>
 				</div>
 				
-				<div class="ava" style="background-image: url({gender === "Мужской" ? Male : Female})"/>
+				<div class="ava" style="background-image: url({gender === "Male" ? Male : Female})"/>
 				
 				<div class="desc">
 					<span class="line">{name} {surname}</span>
-					<span>{translateText('player', 'Имя')}:</span>
+					<span>{translateText('player', 'Name')}:</span>
 				</div>
 				
 				<div class="desc">
 					<span class="line">{rank}</span>
-					<span>{translateText('player', 'Должность')}:</span>
+					<span>{translateText('player', 'Job title')}:</span>
 				</div>
 				
 				<div class="desc">
 					<span class="line">RA{pad(cardNO)}</span>
-					<span>{translateText('player', 'Жетон')}:</span>
+					<span>{translateText('player', 'Token')}:</span>
 				</div>
 				
 				<p>THIS IS THE WARRANT AND AUTHORITY FOR EXECUTING THE DUTIES OF THEIR OFFICE.</p>
